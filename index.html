@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Caesar Cipher</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+	<div class='page-wrapper'>
+		<h1 class='header' id ='header'>Caesar's Cipher</h1>
+		<h2 class='icon'><i class="fa fa-lock" id='instruction-toggle' aria-hidden="true"></i></h2>
+		<h3 id='instruction-header'>Click the lock for instructions</h3>
+		<div class = 'instruction instruction-hidden' id = 'instruction'>
+			<p>To encrypt your message, select "Encrypt" and simply enter your text into the text field below and choose an encryption key. To decrypt, select "Decrypt"  you will need the ciphered text and the encryption key.</p>
+		</div>
+		<div class = 'form'>
+			<div class='method'>
+				<input type='radio' name = 'method' value='encrypt' id = 'encrypt' class='method' checked='true'>Encrypt</input>
+				<input type='radio' name = 'method' value = 'decrypt' id = 'decrypt' class='method'>Decrypt</input>
+			</div>
+			<input type="text" name="plaintext" id = 'plaintext' placeholder="Enter Text Here">
+			<input type="number" name="cipher-key" id = 'cipher-key'>
+			<input type='button' id = 'submit-button' class='submit-button' value='Submit!'></input>
+			<input type='button' id = 'clear-button' class='submit-button' value='Clear'></input>
+		</div>
+	<div id='cipher-text'>
+		<p><i>Output</i></p>
+	</div>
+	<div class='descriptor'>
+		<p> This was created as a front-end to Harvard CS50 Course's Caesar Cipher Exercise in Problem Set 2. This course is available to be audited for free at <a href='https://www.edx.org/course/introduction-computer-science-harvardx-cs50x'>this address</a>!</p>
+	</div>
+	</div>
+<script src="https://use.fontawesome.com/4a6800d557.js"></script>
+<script type="text/javascript" src='scripts/main.js'></script>
+
+</body>
+</html>

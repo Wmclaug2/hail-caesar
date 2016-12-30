@@ -1,0 +1,158 @@
+@keyframes rainbow{
+	0%  {color:indigo;}
+	15% {color:red;} 
+	30% {color:orange;}
+	45% {color:yellow;}
+	60% {color:green;}
+	75% {color:blue;}
+	90% {color:indigo;}
+	100% {color:purple;}
+}
+
+html{
+	background-color: #586f7c;
+	height:100%;
+	width:100%;
+}
+
+.page-wrapper{
+	background-color: #87cbac;
+	border-radius: 10px;
+	color:#272d2d;
+	font-family: 'Roboto', sans-serif;
+	height:100%;
+	margin:0 auto;
+	padding:10px;
+	width:100%;
+}
+
+.header{
+	color:#272d2d;
+	font-size:3em;
+	margin:20px;
+	text-align:center;
+}
+
+.icon{
+	animation-duration:15s;
+	animation-iteration-count: infinite;
+	animation-name:rainbow;
+	font-size:4em;
+	margin:0px auto 10px auto;
+	text-align:center;
+	transform:rotate(-360deg);
+	transition:.5s ease-in-out;
+	width:10%;
+}
+.icon:hover{
+	transform:rotate(360deg);
+	transition:.5s ease-in-out;
+}
+
+.form{
+	display:flex;
+	flex-wrap:wrap;
+	justify-content: center;z
+}
+
+.method{
+	background-color:#b8dbd9;
+	border-radius:5px;
+	margin:0px auto 10px auto;
+	padding:10px;
+	width:25%;	
+}
+#instruction-header{
+	text-align:center;
+}
+.instruction{
+	background-color:#DEDEDE;
+	border-radius:5px;
+	font-size:1.1em;
+	margin:15px auto;
+	padding:10px;
+	text-align:center;
+	transition:all 1s ease-in-out;
+	width: 60%;
+}
+
+.instruction-hidden{
+	display:none;
+	height:0;
+	opacity:0;
+}
+
+.instruction-show{
+	display:block;
+	height:100px;
+	opacity:1;
+}
+
+#plaintext{
+	margin:10px;
+	padding:10px;
+	width:80%;
+}
+
+#cipher-key{
+	height:30px;
+	margin:10px;
+	width:18%;
+}
+
+#plaintext, #cipher-key{
+	border-radius: 5px;
+	font-family: 'Roboto', sans-serif;
+	font-size:1.5em;
+	text-align: center;
+}
+
+.submit-button{
+	background-color:#357266;
+	border-radius: 5px;
+	color:#b8dbd9;
+	font-family: 'Roboto', sans-serif;
+	margin:10px;
+	padding: 10px;
+}
+.submit-button:hover{
+	background-color: #b8dbd9;
+	color:#444;
+}
+
+#cipher-text{
+	background-color:#b8dbd9;
+	border-radius:5px;
+	font-size:2em;
+	height:auto;
+	margin:10px auto;
+	padding:10px 20px 10px 20px;
+	text-align: center;
+	width:75%;
+}
+
+.descriptor{
+	margin: 0 auto;
+	text-align:center;
+	width:80%;
+}
+
+@media screen and(max-width:400px){ 
+	.method{
+		width:75%;
+	}
+
+	#cipher-text{
+		width:90%;
+	}
+
+	#cipher-key{
+		margin:0 auto;
+		width:45%;
+	}
+
+	#plaintext{
+		width:85%;
+	}
+}
+
