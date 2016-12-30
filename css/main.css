@@ -55,12 +55,17 @@ html{
 	justify-content: center;z
 }
 
-.method{
+.method-container{
 	background-color:#b8dbd9;
 	border-radius:5px;
+	display:flex;
+	justify-content: center;
 	margin:0px auto 10px auto;
 	padding:10px;
 	width:25%;	
+}
+.method{
+	margin:0px 15px;
 }
 #instruction-header{
 	text-align:center;
